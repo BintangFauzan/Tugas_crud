@@ -12,7 +12,7 @@ $tanggal = $_POST['tanggal'];
 $abstrak = $_POST['abstrak'];
 
 $query =  "UPDATE `buku` SET `JUDUL`='$judul',`PENGARANG`='$pengarang', `JUMLAH`='$jumlah',`TANGGAL`='$tanggal',`ABSTRAK`='$abstrak' WHERE `ISBN`='$isbn'";
-$execute = $koneksi->query($query);
+$execute = $dbConn->query($query);
 $response = [];
 
 
