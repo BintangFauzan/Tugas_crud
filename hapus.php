@@ -8,7 +8,7 @@ $isbn = $_POST['isbn'];
 
 
 $query =  "DELETE FROM `buku` WHERE ISBN = $isbn";
-$execute = $koneksi->query($query);
+$execute = $dbConn->query($query);
 $response = [];
 
 
